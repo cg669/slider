@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>slider插件</title>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/slider.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/stylesheets/slider.css"/>
+	</head>
+	<body>
+		<div class="slider"></div>
+		<script type="text/javascript">
+			$('.slider').slider({
+//				delay    : 2,   //延迟时间，默认两秒
+				isPoint  : true,//是否显示圆点，默认为true
+				width : 400,
+				arr : [['src1','img/1.jpg'],['src2','img/2.jpg'],['src2','img/3.jpg'],['src2','img/4.jpg'],['src2','img/5.jpg']],
+			});
+		</script>
+	</body>
+</html>

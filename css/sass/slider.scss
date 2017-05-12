@@ -1,0 +1,49 @@
+@import "screen";
+@import "compass/css3/border-radius";
+@import "compass/css3/box-sizing";
+.slider{
+    margin: 100px auto;
+    position: relative;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    .slider-list{
+        position: absolute;
+        height: 400px;
+        overflow: hidden;
+        .slider-pic{
+            float: left;
+            width: 400px;
+            height: 400px;
+            img{
+                width: 400px;
+            }
+        }
+    }
+    .point{
+        position: absolute;
+        bottom: 10px;
+        z-index: 2;
+        padding: 2px 4px; //固定的不能修改
+        overflow: hidden;
+        background: {
+            color: rgba(0,0,0,.4);
+        };
+        @include border-radius(5px);
+        span{
+            float: left;
+            margin: 2px 3px;
+            width: 12px;
+            height: 12px;
+            background: {
+                color: lightskyblue;
+            };
+            @include border-radius(50%);
+        }
+        .active{
+            background: {
+                color: red;
+            };
+        }
+    }
+}
